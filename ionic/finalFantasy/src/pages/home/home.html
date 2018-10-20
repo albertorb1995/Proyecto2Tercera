@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      @Belilles
+    </ion-title>
+
+    <ion-title id="titulo">
+      Final Fantasy List
+    </ion-title>
+  
+    <button ion-button full icon-only (click)="irAOtraPagina()">
+      <ion-icon id="añadir" name="md-add-circle"></ion-icon>
+    </button>
+    <button ion-button full icon-only (click)="getPersonajes()">
+      <ion-icon id="añadir" name="sync"></ion-icon>
+    </button>
+
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  
+   
+  <ion-list>
+    <ion-item *ngFor="let usuario of usuarios">
+      <ion-note item-star id="lista">
+
+          <button  (click)= "deleteUsuarios(usuario)"><ion-icon name="backspace"></ion-icon></button>
+       
+      </ion-note>
+      <!-- {{usuario.id}} -->
+      <ion-note item-second id="lista">
+        Name:
+      </ion-note>
+       {{usuario.nombre}}
+      <ion-note item-last id="lista">
+        Class:
+      </ion-note>
+      {{usuario.clase}}
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

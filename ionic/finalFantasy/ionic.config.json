@@ -1,0 +1,7 @@
+{
+  "name": "finalFantasy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

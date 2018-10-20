@@ -1,0 +1,5 @@
+package com.alberto.finalfantasy.entity.models;
+
+public class Noticia {
+
+}

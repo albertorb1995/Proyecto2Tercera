@@ -1,0 +1,5 @@
+package com.alberto.finalfantasy.entity.dao;
+
+public class INoticiaDao {
+
+}

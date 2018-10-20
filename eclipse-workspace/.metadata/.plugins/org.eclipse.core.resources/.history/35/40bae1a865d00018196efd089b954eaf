@@ -1,0 +1,5 @@
+package com.alberto.finalfantasy.entity.services;
+
+public class NoticiaServiceImpl {
+
+}

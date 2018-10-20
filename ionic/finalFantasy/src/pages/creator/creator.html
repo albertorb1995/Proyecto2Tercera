@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Volver</ion-title>
+  </ion-navbar>
+
+  <ion-title id="titulo">
+    Crear Personaje
+  </ion-title>
+
+
+</ion-header>
+
+
+
+<ion-content padding>
+  <form #creatorForm="ngForm" (ngSubmit)="push(creatorForm.value)">
+    <input type="hidden" name="href" [(ngModel)]="usuario.href">
+
+      <div class="form-group">
+        <h5>Name:</h5>
+        <input type="text" class="form-control input-lg text-center" name="nombre" placeholder="Name..." [(ngModel)]="usuario.name" #nombre>
+      </div>
+
+      <br/>
+
+
+      <div class="form-group">
+          <h5>Class:</h5>
+          <input type="text" class="form-control input-lg text-center" name="clase" placeholder="Class..." [(ngModel)]="usuario.clase" #clase>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <button id="botonPersona" full type="submit">
+            <ion-icon id="persona" ios="ios-person-add" md="md-person-add"></ion-icon>
+        </button>
+  </form>
+</ion-content>
